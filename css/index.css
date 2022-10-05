@@ -1,0 +1,333 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+.container { width: 100%; margin: auto; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        /*-------HEADER-------*/
+header {position: relative; background:rgb(255, 255, 255); height: 110px; font-size: 15px;}
+header {position: sticky; top: 0; z-index: 1;}
+
+/*Header Gambar*/
+header .headergambar img {float: left; margin: 35px 70px 0 35px; width: 145px; height: 41px;}
+
+/*Menu*/
+.headermenu {position: relative; top: 35px; width: 100%;}
+menu {
+    height: 110px;
+    line-height: 45px;
+    top: 35px;
+    float: left;
+    left: 0;
+    }
+
+menu ul li {float: left; list-style: none; margin-right: 30px;}
+menu ul li a {margin:5px; text-decoration: none; color: black;}
+menu ul li a:hover {color: #6B87E3; transition: 0.6s ease; }
+menu ul li ul {display: none; position: absolute; width: 200px; z-index:9999;}
+menu ul li:hover > ul {display: block; z-index:9999;}
+menu ul li ul li {float: none; position: relative; background: rgb(255, 255, 255); z-index:9999;}
+menu ul ul ul {left: 100%; top: 0; width: 200px;z-index:9999;}
+
+
+/*Header Kanan*/
+.headerkanan {right: 20px; position: relative; top: 45px; float: right;}  
+.headerkanan .nomor {
+    float: left;
+	width: 165px;
+	height: 30px;
+    position: relative;
+    }
+
+.headerkanan .nomor img {margin-top: 5px; width: 25px; height: auto; float: left; padding-right: 5px;}
+.headerkanan .nomor p {margin-top: 5px;}
+
+.headerkanan .sosmed {
+    float: left;
+	height: 30px;
+	width: 180px;
+	border-left: 1px solid #6B87E3;
+    margin-right: 50px;
+    padding-left: 15px;
+   }
+.headerkanan .sosmed a {font-size: 16px; margin-top: 5px;}
+
+/*Search*/
+.search {position: absolute; background: #6B87E3; width: 80px; height: 110px; right: 0;}
+.search img {width: 20px; height: auto; margin: 45px 0 0 30px;}
+
+        /*-------SLIDER-------*/
+.slider {width: 100%; overflow: hidden; position: relative;}
+.imgslide img {width: 100%; height: 35rem;  object-fit: cover; object-position: center;}
+.nama-gambar, .keterangan-gambar{position: absolute; width: 100%; text-align: center;} 
+.nama-gambar {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px grey;
+    top: 35%; font-size: 70px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.keterangan-gambar {
+    text-shadow: 1px 1px grey;
+    color: white; 
+    top: 49%;
+    font-size: 20px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*tombol slider*/
+.tombolslide {display: flex; align-items: center; justify-content: center; width: 100%;}
+.tombolslide button {position: absolute; padding: 20px 45px; top: 60%; 
+    background: rgb(241, 63, 63); border: 0; border-radius: 7px; color: white; font-weight: bold; font-size: 16px;}
+.tombolslide button:hover {background: #6B87E3; transition: 0.5s ease-in-out;}
+
+/*prev and next*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 40px 16px;
+    color: white;
+    background: rgba(216, 216, 216, 0.5);
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.prev {left: 0;}
+.next {right: 0;}
+.prev:hover, .next:hover {background: white; color: black;}
+
+        /*-----FORM1-----*/
+.form1 {position: relative; background: #304e5a; width: 100%; height: auto;  
+        padding: 30px 0; bottom: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;} 
+.form1 {display: flex; justify-content: center; width: 100%; margin-bottom: 10px;}
+.isi-form1 {overflow: hidden;}
+.isi-form1 .nama, .isi-form1 .isi, .isi-form1 .tanggal, .isi-form1 .pilihan, .isi-form1 .tombol {
+    width: 100%;
+    padding-right: 10px;
+    display: inline;
+    margin: auto;
+}
+.isi-form1 .nama label {
+    color: white;
+    padding: 0 5px 5px 10px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    top: 15px;
+}
+.isi-form1 .isi input {
+    padding: 0 10px 5px 10px;
+    line-height: 50px;
+    width: 200px;
+    background: none;
+    margin-right: 10px;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    border: 1px solid white;
+}
+.isi-form1 .tanggal input {
+    line-height: 50px;
+    padding: 0 10px 5px 10px;
+    margin-right: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    background: none;
+    color: whitesmoke;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.isi-form1 .pilihan select {
+    padding: 17px 10px 25px 10px;
+    border: 1px solid; 
+    padding-left: 5px;
+    width: 225px;
+    margin-left: -5px;
+    background: none;
+    color: whitesmoke;
+    margin-bottom: 9px;
+    border-radius: 3px;
+}
+select option {color: black;}
+.isi-form1 .tombol button {
+    background: #6B87E3; top: 5px; padding: 20px 45px; position: relative;
+    border: 0; border-radius: 7px; color: white; font-weight: bold; bottom: -10; font-size: 16px;
+}
+.isi-form1 .tombol button:hover {
+    background: rgb(241, 63, 63);
+    transition: 0.5s ease-in-out;
+}
+
+        /*-----BOX1----*/
+.box1 {width: 100%; text-align: center; margin: 120px 0 0 0;}
+.isi-box1 span {text-align: center; font-size: 40px; padding: 10px; color:#304e5a;}
+.isi-box1 p {text-align: center; padding: 20px; font-size: 15px; color: grey; line-height: 28px;}
+
+
+        /*----IMGGALLERY1----*/
+.imggallery1 {display: flex; justify-content: center; width: 100%; position: relative; margin-bottom: 150px;}
+.isi-imggallery1 {margin-top: 40px; width: 980px;}
+.isi-imggallery1 .foto {width: 300px; margin: 10px 12.5px; height: auto; float: left;
+    border-radius: 7px;}
+.isi-imggallery1 img {width: 100%; height: 250px; border-radius: 7px; filter: brightness(70%);}
+.isi-imggallery1 .teks {width: 100%; position: absolute; margin-top: -50px;}
+.imggallery1 .teks .judul {color: white; font-size: 20px; padding-left: 20px; float: left; margin-right: 10px;}
+.imggallery1 .teks .nomor span {background: #6B87E3; font-size: 13px; padding: 2px 10px; border-radius: 30px; 
+    color: white;}
+
+    .imggallery1 .foto:hover {transform: translate(0px, -10px); transition: transform 0.5s ease; }
+    .imggallery1 .foto:hover .judul {color: rgb(241, 63, 63); transition: 0.5s ease-in-out;}
+    .imggallery1 .foto:hover .nomor span {background: rgb(241, 63, 63); transition: 0.5s ease-in-out;}
+
+        /*-----FORM-----*/
+.form2 { height: auto; background: rgb(50, 55, 82); padding: 30px; overflow: hidden;}
+.isi-form2 {display: flex; justify-content: center; width: 100%; margin-bottom: 10px; margin-top: 30px;}
+.form2 .kiri {margin-right: 50px; margin-bottom: 15px;}
+.form2 .kiri span {color: white; font-size: 22px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 200;}
+.form2 .kiri p {color: rgb(182, 182, 182); line-height: 28px; margin-top: 15px;}
+
+.form2 .kanan {bottom: 5px; position: relative;}
+.form2 .kanan input {padding: 20px 15px; width: 350px; margin-right: 5px; border: 0; border-radius: 7px; font-size: 16px;}
+.form2 .kanan button {background: #6B87E3;  padding: 20px 35px; position: relative;
+    border: 0; border-radius: 7px; color: white; font-weight: bold; font-size: 16px;}
+.form2 .kanan button:hover {background:rgb(241, 63, 63); transition: 0.5s ease-in-out;}
+
+.form2 .kiri input, .form2 .kanan button{margin-top: 25px;}
+
+        /*-----ARTICLE-TENGAH-----*/
+.article-tengah {background:rgb(247, 251, 255); height: auto; margin: auto; padding: 50px 50px 150px 50px; }
+
+/*------BOX2------*/
+.box2 {width: 100%; text-align: center; margin: 100px 0 0 0;}
+.isi-box2 span {text-align: center; font-size: 40px; padding: 10px; color:#304e5a;}
+.isi-box2 p {text-align: center; padding: 20px; font-size: 15px; color: grey; line-height: 28px;}
+
+/*------IMGGALLERY2------*/
+.imggallery2 {display: flex; justify-content: center; width: 100%; position: relative; margin-bottom: 50px;}
+.isi-imggallery2 {margin-left: 80px; margin-top: 40px; width: 1200px;}
+.isi-imggallery2 .kotak {width: 350px; padding-bottom: 15px; margin-right: 25px; margin-bottom: 20px; background: white; height: auto; float: left;
+    border-radius: 7px; padding-bottom: 30px;}
+.isi-imggallery2 img {width: 100%; margin-top: 0; height: 250px; filter: brightness(90%);}
+.isi-imggallery2 .isi-teks {padding: 20px 25px; margin: auto; font-weight: 500;}
+.isi-imggallery2 .harga {margin-left: 20px; padding: 5px 15px; position: absolute; background: #6B87E3; color: white;
+    border-radius: 30px; margin-top: -240px;}
+.isi-imggallery2 .judul {font-size: 22px;}
+.isi-imggallery2 .keterangan {font-size: 13px; color: grey; line-height: 28px; padding-bottom: 10px;}
+.isi-imggallery2 .review span[name=bintang] {float: left; font-size: 12px; margin-right: 5px;}
+.isi-imggallery2 .review p {color: grey; float: left; font-size: 13px;}
+.isi-imggallery2 .review span[name=hari] {font-size: 13px; color: grey; float: right;}
+
+.isi-imggallery2 .kotak:hover {box-shadow: 0 5px 12px  rgb(204, 204, 204); transition: 0.5s ease;}
+.isi-imggallery2 .kotak:hover .judul {color: rgb(241, 63, 63); transition: 0.5s ease;}
+.isi-imggallery2 .kotak:hover .harga {background: rgb(241, 63, 63); transition: 0.5s ease;}
+
+
+/*----------------------------------------------------*/
+
+
+/*TOMBOL*/
+.article-tengah .tombol {display: flex; justify-content: center; width: 100%; position: relative;}
+.article-tengah .tombol button {background: #6B87E3;  padding: 15px 35px;
+    border: 0; border-radius: 7px; color: white; font-weight: bold; font-size: 16px;}
+.article-tengah .tombol button:hover {background: rgb(241, 63, 63); transition: 0.5s ease-in-out;}
+
+        /*-----VIDEO-----*/
+.video {width: 100%; height: 700px; top: 0; position: relative;}
+.video .isi-video .background {position: relative;}
+.isi-video .background img {height: 700px; width: 100%; filter: brightness(80%);
+    object-fit: cover; object-position: center;}
+
+.isi-video .tombol {display: flex; justify-content: center; width: 100%; position: relative;}
+.isi-video .tombol .fa {position: relative; top: -350px; background: #6B87E3;
+   font-size: 15px; color: white; padding: 25px; border-radius: 50%; text-align: center;}
+.isi-video .nama-gambar {top: 200px;}
+
+        /*-----TIGA-GAMBAR-----*/
+.tiga-gambar {display: flex; justify-content: center; margin: auto; width: 100%; margin-top: 150px; margin-bottom: 140px;}
+.tiga-gambar .isi-tiga-gambar {width: 1200px;}
+.tiga-gambar .kotak {float: left; width: 350px; margin-right: 10px; margin-bottom: 10px;
+    margin-left: 32px;}
+.tiga-gambar .gambar img {width: 80px; height: auto; margin-left: 130px;}
+.tiga-gambar .tulisan {width: 100%; text-align: center; margin: 30px 0 0 0;}
+.tiga-gambar span {text-align: center; font-size: 23px; color:#304e5a;}
+.tiga-gambar p {text-align: center; padding: 20px; font-size: 15px; color: grey; line-height: 28px; margin-top: -10px;}
+
+        /*----SLIDER2----*/
+.slider2 {background: rgb(247, 251, 255); display: flex; justify-content: center; width: 100%; margin-bottom: 150px;}
+.isi-slider2 {position: relative; padding: 100px; width: 1000px;}
+.isi-slider2 .slides {display: flex; }
+.isi-slider2 .kotak {margin: 10px; }
+.isi-slider2 .kotak .isi-kotak {
+    width: 780px;
+    position: relative;
+   }
+
+.isi-slider2 .profile {margin-bottom: 20px; padding: 10px; display: flex; justify-content: center;}
+.isi-slider2 .petik {position: relative; left: -30px; top: 55px;}
+.isi-slider2 i {position: absolute;  display: flex; justify-content: center; }
+.isi-slider2 .fa {color: white; border-radius: 50%; background: #6B87E3; font-size: 20px; padding: 15px;}
+.isi-slider2 .teks {text-align: center; font-size: 16px; color: #304e5a; line-height: 28px;}
+.isi-slider2 .autor {text-align: center; font-size: 16px; color: grey; line-height: 28px;}
+
+.isi-slider2 .tombol {display: flex; justify-content: center; padding-top: 15px;}
+.isi-slider2 .tombol input {margin: 0 5px; color: #6B87E3;}
+
+
+        /*----RECENT-TRIPS----*/
+.recent-trips p {text-align: center; font-size: 35px; font-weight: 300;
+        font-family: sans-serif;}
+
+        /*-----ARTICLE-BAWAH-----*/
+.article-bawah {display: flex; justify-content: center; width: 100%; margin-bottom: 100px;}
+.isi-article-bawah {margin-left: 10px; margin-top: 80px; width: 1125px;}
+.isi-article-bawah .kotak {width: 350px; padding-bottom: 15px; margin: 10px 12.5px;  height: auto; float: left;
+    border-radius: 7px;}
+.isi-article-bawah img {border-radius: 7px; width: 100%; margin-top: 0; height: 220px; filter: brightness(90%); margin-bottom: 10px;}
+.isi-article-bawah .isi-teks {margin: auto; font-weight: 500;}
+.isi-article-bawah .tanggal {color: grey; font-size: 13px; margin-bottom: 10px;}
+.isi-article-bawah .judul {font-size: 20px;}
+.isi-article-bawah .kotak:hover .judul {color: #6B87E3; transition: 0.5s ease;}
+
+        /*-----FOOTER-----*/
+.footer {background: #304e5a; overflow: hidden;}
+.footer-atas {border-bottom: 1px solid rgb(95, 95, 95); padding: 130px 0;
+    box-sizing: border-box;}
+.isi-footer {display: flex; justify-content: center;}
+.isi-footer .kol1 .atas img {width: 145px; height: 41px;}
+.kol1, .kol2, .kol3, .kol4 {
+    float: left;
+    padding-right: 50px;
+    margin: 20px;
+    height: 250px;
+}
+.footer-atas .tengah {padding: 25px 0 50px 0; color:rgb(182, 182, 182); line-height: 25px; font-size: 14px;}
+.footer-atas .tengah a {color: rgb(182, 182, 182); text-decoration: none;}
+
+/*LOGO-SOSMED*/
+.fa {
+    padding-right: 15px;
+    padding-left: 5px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(182, 182, 182);
+  }
+.footer-atas .fa:hover, .headerkanan .fa:hover {
+    color:#6B87E3; transition: 0.5s ease-in-out;}
+
+.footer-atas .judul {color: white; margin-bottom: 30px; font-size: 22px;}
+.footer-atas .list ul li {list-style: none; padding-bottom: 10px;}
+.footer-atas .list ul li a {color: rgb(182, 182, 182); text-decoration: none; font-size: 14px;}
+.footer-atas a:hover, .footer-atas .list ul li a:hover {color:#6B87E3; transition: 0.5s ease-in-out;}
+.kol3 .kiri {float: left;}
+.kol3 .kanan {float: right;}
+.kol4 .imggallery {width: 255px;}
+.kol4 .imggallery .foto {margin-right: 10px;  float: left;}
+.kol4 .imggallery .foto img {width: 75px; height: 70px; filter: brightness(90%);}
+
+/*FOOTER-BAWAH*/
+.footer-bawah .copyright {font-size: 13px; color: rgb(143, 143, 143); background: #304e5a;
+text-align: center; padding: 30px 0;} /*rgb(6, 10, 44)*/
